@@ -100,11 +100,9 @@ def load_data(data_dir, subject_nb=1, session_nb=1, sfreq=256.,
     if session_nb == 'all':
         session_nb = '*'
 
-    data_path = os.path.join(
-            '../data', data_dir,
-            'subject{}/session{}/*.csv'.format(subject_nb, session_nb))
+    data_path = os.path.join('../data', data_dir,'subject{}/session{}/*.csv'.format(subject_nb, session_nb))
     fnames = glob(data_path)
-    print("Data Path:" + str(data_path)
+    print("Data Path:" + str(data_path))
     print("fnames: " + str(fnames))
 
     return load_muse_csv_as_raw(fnames, sfreq=sfreq, ch_ind=ch_ind,
