@@ -100,8 +100,7 @@ def load_data(data_dir, subject_nb=1, session_nb=1, sfreq=256.,
     if session_nb == 'all':
         session_nb = '*'
 
-    data_path = os.path.join(
-            '../data', data_dir,
+    data_path = os.path.join(data_dir,
             'subject{}/session{}/*.csv'.format(subject_nb, session_nb))
     fnames = glob(data_path)
 
