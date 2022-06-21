@@ -9,7 +9,7 @@ jupyter-core==4.4.0
 jupyterlab==0.32.1
 jupyterlab-launcher==0.10.5
 matplotlib==3.0.2
-numpy==1.16.1
+numpy==1.22.0
 numpydoc==0.8.0
 pandas==0.24.1
 pandocfilters==1.4.2
